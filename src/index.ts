@@ -6,10 +6,10 @@ const arweaveWalletJsonPath = args[0];
 
 
 // クライアント作成
-const getIrysArweave = async (arweaveWallet: string): Promise<Irys> => {
-	// const url = "https://devnet.irys.xyz";
+const getIrysArweave = async (arweaveWallet: string) => {
+	const url = "https://node1.irys.xyz";
     // Uploads to Irys's Devnet are kept for roughly 60 days. 
-	const url = "https://devnet.irys.xy";
+	// const url = "https://devnet.irys.xy";
 	const token = "arweave";
 	const key = JSON.parse(fs.readFileSync(arweaveWallet).toString());
  
@@ -35,7 +35,7 @@ const fundNode = async (irys: Irys) => {
 //
 const main = async function(){
     console.log("Hello World.");
-    const irys: Irys =  await getIrysArweave(arweaveWalletJsonPath);
+    const irys =  await getIrysArweave(arweaveWalletJsonPath);
     await fundNode(irys);
     
 }

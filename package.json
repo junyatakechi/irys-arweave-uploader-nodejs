@@ -2,14 +2,12 @@
   "name": "template",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node ."
+    "start": "ts-node ."
   },
   "author": "Takechy",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@irys/sdk": "^0.0.4"
   }
