@@ -9,5 +9,8 @@
   },
   "author": "Takechy",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@irys/sdk": "^0.0.4"
+  }
 }
